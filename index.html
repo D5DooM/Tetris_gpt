@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="tetrisCanvas" width="300" height="600"></canvas>
+        <div class="side-panel">
+            <div class="score-board">
+                <p>Score: <span id="score">0</span></p>
+                <p>High Scores:</p>
+                <ul id="leaderboard">
+                    <!-- Leaderboard scores will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="next-shape">
+                <p>Next:</p>
+                <canvas id="nextShapeCanvas" width="120" height="120"></canvas>
+            </div>
+            <button id="autoplayButton">Autoplay</button>
+        </div>
+    </div>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/grid.js"></script>
+    <script src="scripts/shapes.js"></script>
+    <script src="scripts/score.js"></script>
+    <script src="scripts/leaderboard.js"></script>
+    <script src="scripts/input.js"></script>
+    <script src="scripts/draw.js"></script>
+    <script src="scripts/nextShape.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
